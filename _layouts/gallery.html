@@ -1,0 +1,12 @@
+---
+layout: page
+---
+
+<div class="gallery">
+  {% assign pics=site.posts | where:"layout",gallery %}
+  {% for post in pics %}
+  <div class="img-w">
+    <img src="{{ post.img }}" alt="{{ post.title }}" />
+  </div>
+  {% endfor %}
+</div>
