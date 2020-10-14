@@ -80,6 +80,10 @@
 .gallery-item { opacity: 0.5; }
 .gallery-item.active { opacity: 1; }
 
+figure.gallery-item {
+  margin-bottom: 0;
+}
+
 .controls {
 	font-size: larger;
 	border-top: none;
@@ -91,6 +95,7 @@
   color: #ccc;
 	background-color: transparent;
 	padding: 0.2em 1.5em;
+  height: 3em;
 }
 .move-btn:first-child {border-right: none;}
 .move-btn.left  { cursor: w-resize; }

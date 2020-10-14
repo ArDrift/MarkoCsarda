@@ -1,6 +1,6 @@
 ---
 layout: home
-image: /assets/images/full_out_1.jpg
+image: /assets/images/outer/out_4.jpg
 ---
 
 <script>
