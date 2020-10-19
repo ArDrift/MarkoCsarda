@@ -2,8 +2,6 @@
 layout: page
 ---
 
-<div class="container">
-
   {% assign pics=site.posts | where:"layout", "gallery" | sort: "date" %}
 
   {% assign outerpics=pics | where:"type", "outer" %}
@@ -40,6 +38,3 @@ layout: page
 
 
   {% include gallery-section.html %}
-
-
-</div>
