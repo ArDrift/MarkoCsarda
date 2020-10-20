@@ -8,8 +8,8 @@ layout: page
   <h3>Kinti képek az étteremről</h3>
   <div id="links">
   {% for post in outerpics %}
-    <a href="{{ post.img | relative_url }}" title="{{ post.title }}">
-      <img src="{{ post.img | relative_url }}" alt="{{ post.title }}" width="100" height="100"/>
+    <a href="{{ post.img | relative_url }}" title="">
+      <img loading="lazy" src="{{ post.img | relative_url }}" alt="{{ post.title }}" width="100" height="100"/>
     </a>
   {% endfor %}
   </div>
@@ -19,8 +19,8 @@ layout: page
   <h3>Benti képek</h3>
     <div id="links2">
     {% for post in innerpics %}
-      <a href="{{ post.img | relative_url }}" title="{{ post.title }}">
-        <img src="{{ post.img | relative_url }}" alt="{{ post.title }}" width="100" height="100"/>
+      <a href="{{ post.img | relative_url }}" title="">
+        <img loading="lazy" src="{{ post.img | relative_url }}" alt="{{ post.title }}" width="100" height="100"/>
       </a>
     {% endfor %}
     </div>
@@ -31,7 +31,7 @@ layout: page
     <div id="links3">
     {% for post in foodpics %}
       <a href="{{ post.img | relative_url }}" title="{{ post.title }}">
-        <img src="{{ post.img | relative_url }}" alt="{{ post.title }}" width="100" height="100"/>
+        <img loading="lazy" src="{{ post.img | relative_url }}" alt="{{ post.title }}" width="100" height="100"/>
       </a>
     {% endfor %}
     </div>
