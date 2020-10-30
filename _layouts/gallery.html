@@ -36,5 +36,16 @@ layout: page
     {% endfor %}
     </div>
 
+    {% assign menupics=pics | where:"type", "menu" %}
+    <br>
+    <h3>Heti ajánlat</h3>
+    <div id="links4">
+    {% for post in menupics %}
+      <a href="{{ post.img | relative_url }}" title="{{ post.title }}">
+        <img loading="lazy" src="{{ post.img | relative_url }}" alt="{{ post.title }}" width="100" height="100"/>
+      </a>
+      <h4>{{ post.title }}</h4>
+    {% endfor %}
+    </div>
 
   {% include gallery-section.html %}
